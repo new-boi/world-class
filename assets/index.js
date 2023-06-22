@@ -13,6 +13,84 @@ document.getElementById("btn1").onclick=function(){
 
 
 
+var inactivityTime = function () {
+    var time;
+    window.onload = resetTimer;
+    // DOM Events
+    document.onmousemove = resetTimer;
+    document.onkeydown = resetTimer;
+
+    function logout() {
+        document.getElementById("btn_minimize").style.visibility = "hidden";
+
+        if(page==3){
+            document.getElementById("bg_img1").style.opacity = 1;
+            document.getElementById("bg_img3").style.opacity = 0;
+            document.getElementById("main_content1").style.opacity = 0;
+    
+        }
+        if(page==4){
+            document.getElementById("bg_img1").style.opacity = 1;
+            document.getElementById("bg_img3").style.opacity = 0;
+            document.getElementById("main_content2").style.opacity = 0;
+    
+        }
+        if(page==5){
+            document.getElementById("bg_img1").style.opacity = 1;
+            document.getElementById("bg_img3").style.opacity = 0;
+            document.getElementById("main_content3").style.opacity = 0;
+    
+        }
+        if(page==6){
+            document.getElementById("bg_img1").style.opacity = 1;
+            document.getElementById("bg_img3").style.opacity = 0;
+            document.getElementById("main_content4").style.opacity = 0;
+    
+        }
+        if(page==7){
+            document.getElementById("bg_img1").style.opacity = 1;
+            document.getElementById("bg_img3").style.opacity = 0;
+            document.getElementById("main_content5").style.opacity = 0;
+    
+        }
+        if(page==8){
+            document.getElementById("bg_img1").style.opacity = 1;
+            document.getElementById("bg_img3").style.opacity = 0;
+            document.getElementById("main_content6").style.opacity = 0;
+    
+        }
+        if(page==9){
+            document.getElementById("bg_img1").style.opacity = 1;
+            document.getElementById("bg_img3").style.opacity = 0;
+            document.getElementById("main_content7").style.opacity = 0;
+    
+        }
+    
+    
+        page = 2;
+        document.getElementById("bg_img1").style.opacity = 1;
+        document.getElementById("bg_img2").style.opacity = 0;
+        document.getElementById("btn1").style.visibility='visible';
+        document.getElementById("nested1").style.visibility = "hidden";
+        document.getElementById("btn_home").style.visibility = "hidden";
+        document.getElementById("next_btn").style.visibility = "hidden";
+    
+    }
+
+    function resetTimer() {
+        clearTimeout(time);
+        time = setTimeout(logout, 1200000)
+        // 1000 milliseconds = 1 second
+    }
+};
+
+
+window.onload = function() {
+    inactivityTime();
+  }
+
+
+
 document.getElementById("btn_home").onclick=function(){
 
 
