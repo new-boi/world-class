@@ -11,6 +11,10 @@ body{
 
 }
 
+.main{
+    position: relative;
+}
+
 #btn1{
     z-index: 1;
     visibility:visible;
