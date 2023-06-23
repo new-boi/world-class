@@ -22,7 +22,7 @@ body{
     left: 23%;
     top: 47.5%;
     width: 56%;
-    height: auto    ;
+    height: auto;
     transform: scale(1);
 	animation: pulse 1.5s infinite;
 }
