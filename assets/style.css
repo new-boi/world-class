@@ -166,9 +166,16 @@ body{
 
 
 
-#main_content6{
+#main_content6,#main_content7{
     top: 387px;
     width: 84%;
     right: 54px;
+
+}
+
+#main_content7{
+    top: 381px;
+    width: 78.4%;
+    right: 116px;
 
 }
